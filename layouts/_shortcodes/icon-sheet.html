@@ -1,0 +1,15 @@
+{{- /* Renders a row of the theme's icons, each under its own name.
+
+       Usage: {{< icon-sheet names="github, gitlab, codeberg" >}} */ -}}
+{{- $names := split (.Get "names") "," -}}
+<ul class="icon-sheet" role="list">
+{{- range $names }}
+{{- $n := trim . " " }}
+{{- with $n }}
+    <li class="icon-sheet__item">
+        {{ partialCached "icon.html" . . }}
+        <code class="icon-sheet__name">{{ . }}</code>
+    </li>
+{{- end }}
+{{- end }}
+</ul>
