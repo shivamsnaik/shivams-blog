@@ -94,7 +94,7 @@ enableRobotsTXT = true
         subtitle = "SAP ABAP Developer | IS-U | S4/HANA | BTP"
 				#about = """I'm a software engineer writing about my insights and learnings from my 
 				#journey through SAP and AI."""
-        image = "profile.jpg"
+        image = "profile.svg"
 				view = "terminal"
         #imageAlt = "Placeholder portrait, drawn as a front elevation"
         #imageWidth = 120
