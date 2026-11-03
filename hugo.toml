@@ -62,6 +62,11 @@ enableRobotsTXT = true
     threshold = 0.4
     keys = ["title", "permalink", "summary", "content"]
 
+# Required by GitHub Pages
+[caches] 
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # With defaultContentLanguageInSubdir nothing lands at the publish root, so the
 # web server has no error document. This writes one to /404.html.
 [outputFormats.ROOT404]
