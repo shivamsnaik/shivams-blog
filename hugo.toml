@@ -1,0 +1,199 @@
+
+baseURL = "https://www.thebinaryverse.com"
+title = "Shivam Naik's Blog"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/cebor/vellum"
+
+[pagination]
+  # Deliberately small. The demo has nine posts and this is what makes the
+  # pagination visible on a list; a real site would set this far higher.
+  pagerSize = 5
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  env = "production"
+  author = "Shivam Naik"
+  defaultTheme = "light"
+  latestPosts = 5
+  mainSections = ["posts"]
+  displayFullLangName = true  
+
+  # Puts the whole post in the feed instead of the summary. Worth exercising
+  # rather than assuming: it is the branch in rss.xml that has to survive the
+  # render hooks, and a demo with code-heavy posts is where that shows.
+  ShowFullTextinRSS = true
+
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShowToc = true
+
+	[params.schema]
+    publisherType = "Person"
+
+	[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/shivamsnaik"
+
+		[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/shivamsnaik"
+
+  # [[params.socialIcons]]
+  #   name = "mastodon"
+  #   url = "https://mastodon.social/"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.fuseOpts]
+    threshold = 0.4
+    keys = ["title", "permalink", "summary", "content"]
+
+# With defaultContentLanguageInSubdir nothing lands at the publish root, so the
+# web server has no error document. This writes one to /404.html.
+[outputFormats.ROOT404]
+  mediaType = "text/html"
+  baseName = "404"
+  notAlternative = true
+  root = true
+
+[languages]
+  [languages.en]
+    label = "English"
+    contentDir = "content/en"
+    weight = 1
+    title = "Shivam's Blog"
+		locale = "en-US"
+		
+    [languages.en.params]
+      #description = "Blog website with latest information regarding SAP and AI Technology"
+      # Localised long date. A Go layout string would freeze the month in one
+      # language; the shorthand resolves per language.
+      DateFormat = ":date_long"
+
+      [languages.en.params.profile]
+        title = "Shivam's Blog"
+        subtitle = "SAP ABAP Developer | IS-U | S4/HANA | BTP"
+				#about = """I'm a software engineer writing about my insights and learnings from my 
+				#journey through SAP and AI."""
+        image = "profile.jpg"
+				view = "terminal"
+        #imageAlt = "Placeholder portrait, drawn as a front elevation"
+        #imageWidth = 120
+
+        # Status fields. They sit in the profile block itself and stay open on
+        # every view, because they are what the sheet states about itself.
+        # [[languages.en.params.profile.fields]]
+        #   label = "Location"
+        #   value = "Munich, DE"
+
+        # [[languages.en.params.profile.fields]]
+        #   label = "Discipline"
+        #   value = "SAP ABAP and Artificial Intelligence"
+
+        # [[languages.en.params.profile.fields]]
+        #   label = "Status"
+        #   value = "Working with SWM GmbH"
+
+        # [[languages.en.params.profile.buttons]]
+        #   name = "Posts"
+        #   url = "posts"
+
+        # [[languages.en.params.profile.buttons]]
+        #   name = "Archive"
+        #   url = "archive"
+
+				# [[languages.en.params.profile.contact]]
+        #   label = "Email"
+        #   value = "[shivamsnaik@ikmail.com](mailto:shivamsnaik@ikmail.com)"
+
+        # [[languages.en.params.profile.contact]]
+        #   label = "Code"
+        #   value = "[github.com/shivamsnaik](https://github.com/shivamsnaik)"
+
+
+        # The JSON output *is* the search index. Without it, /search/ finds nothing.
+        [languages.en.outputs]
+          home = ["HTML", "RSS", "JSON", "ROOT404"]
+
+
+        [[languages.en.menus.main]]
+          name = "Posts"
+          pageRef = "/posts"
+          weight = 10
+
+        [[languages.en.menus.main]]
+          name = "Tags"
+          pageRef = "/tags"
+          weight = 20
+        
+        [[languages.en.menus.main]]
+          name = "Search"
+          pageRef = "/search"
+          weight = 30
+        
+        [[languages.en.menus.main]]
+        	name = "Archive"
+          pageRef = "/archive"
+        	weight = 40
+
+        [[languages.en.menus.main]]
+        	name = "About"
+          pageRef = "/about"
+        	weight = 50
+
+#   [languages.de]
+#     label = "Deutsch"
+#     contentDir = "content/de"
+#     weight = 1
+#     title = "Shivam's Blog"
+#      locale = "de-DE"
+#     [languages.de.params]
+#       description = "A Hugo theme that sets every page as an engineering drawing sheet."
+#       # Localised long date. A Go layout string would freeze the month in one
+#       # language; the shorthand resolves per language.
+#       DateFormat = ":date_long"
+
+#       [languages.de.params.profile]
+#         title = "Shivam Naik"
+#         subtitle = "SAP ABAP Developer"
+#         #image = "images/profile.svg"
+#         imageAlt = "Placeholder portrait, drawn as a front elevation"
+#         imageWidth = 120
+
+#         # The JSON output *is* the search index. Without it, /search/ finds nothing.
+#         [languages.de.outputs]
+#           home = ["HTML", "RSS", "JSON", "ROOT404"]
+
+#         [[languages.de.menus.main]]
+#           name = "Beiträge"
+#           pageRef = "/posts"
+#           weight = 10
+
+#         [[languages.de.menus.main]]
+#           name = "Tags"
+#           pageRef = "/tags"
+#           weight = 20
+        
+#         [[languages.de.menus.main]]
+#           name = "Suche"
+#           pageRef = "/search"
+#           weight = 30        
+
+					# [[languages.de.menus.main]]
+					# 	name = "Archiv"
+					# 	pageRef = "/archive"
+					# 	weight = 40
