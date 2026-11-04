@@ -4,24 +4,33 @@ draft = false
 title = 'Welcome to My Blog'
 tags = ['First Post', 'Introduction']
 searchHidden = false
-TocOpen = false
+TocOpen = true
+
+[ai]
+  level = 'assisted' #assisted or generated
+  note = 'Optimized the Post, and its formatting'
+  model = 'GLM 5.3 via Mistral AI'
+  hiddenInList = true
 +++
 
-Hello Folks! I am Shivam Naik and I welcome you to my Blog and thank you for making it here, in spite of the fact that there are similar Blogs out there.
+Hello, I'm Shivam Naik and I welcome you to my blog. This blog is for developers - all the developers - who feel the AI wave rushing past them. New models, new tools, new frameworks every week. It's never enough. I felt it too — that's why this blog exists.
 
-All that's going on around us, i.e., the advent and rise of AI, has made me feel quite overwhelmed with the amount of knowledge and skills a person can acquire in today's time. It feels like it's never enough. I'm sure I'm not the only one feeling this.
+## What you'll find here
+The things I wanted to read, in one place:
+- AI news, translated for developers who ship.
+- what actually changes how you build, debug, and deliver software. No hype.
+- ABAP tricks you can't find with a single Google search — the stuff that currently lives in a 2014 forum thread.
+- Tools I try out, hands-on and honest - from the SAP ecosystem and beyond, including when they're not ready for production.
 
-With this Blog, I wish to express myself, share the knowledge I come across through various social media channels, explore new topics, and learn along the way.
+## Why now?
+Because the pace has gone from fast to absurd:
+- Brandon Thomas used Claude Opus 5.5 to build ArtCraft, clean-room open-source clones of the entire Adobe suite in Rust — then did the same to Office with GridCraft, WordCraft, and DeckCraft.
+- Marian Zeis shipped ARC-1, a production-ready MCP server for modern SAP systems — AI assistants can now read and write ABAP, with guardrails.
 
-## What is this Blog going to be about?
-You must have recently come across the news that someone built open-source clones of the Adobe Suite, or a reverse-engineered Microsoft Word clone, or an MCP server called ARC-1, a production-ready MCP server specifically for modern SAP systems.
+  
+One developer cloned Photoshop in weeks; enterprise systems are now controllable by AI agents. Whatever you build, the ground is moving under all of us.
 
-Got the hint? That's right! You will come across interesting topics such as:
-- What's new in **Artificial Intelligence**?
-- New technologies I hear about or come across in **SAP**
-- A trick or two about **ABAP** you wished you could find on Google with a single search
+## Come along
+I don't have a fixed schedule. Nevertheless, I shall post when I've found something worth sharing. You can also follow my blog via [RSS](https://blog.thebinaryverse.com/en/index.xml).
 
-## How did I build this Blog?
-This Blog is built with the help of [Hugo Framework](https://gohugo.io/) along with the [Vellum theme](https://github.com/cebor/vellum) for the UI design.
-
-I hope you take something useful and fun with you after reading this blog. Have fun!
+Thanks for being here — I hope you take something useful, and occasionally something fun, with you.
