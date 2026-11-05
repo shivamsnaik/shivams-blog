@@ -1,0 +1,16 @@
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+{{- $styles := slice -}}
+{{- with .Title -}}
+    {{- $parts := split . "," -}}
+    {{- $styles = $styles | append (printf "width: 100%%; max-width: %s;" (strings.TrimSpace (index $parts 0))) -}}
+    {{- if gt (len $parts) 1 }}
+        {{- $styles = $styles | append (printf "border-radius: %s;" (strings.TrimSpace (index $parts 1))) -}}
+    {{- end }}
+{{- end }}
+<img
+    src="{{ .Destination | safeURL }}" alt="{{ .Text }}"
+    {{ with $image }}
+    width="{{ $image.Width }}" height="{{ $image.Height }}"
+    {{ end }}
+    {{ with $styles }} style="{{ delimit $styles " " | safeCSS }}"{{ end }}
+    />
