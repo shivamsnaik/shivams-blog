@@ -7,7 +7,7 @@ comments = false
 TocOpen = false
 toc = true
 [cover]
-  image = "covers/joule-studio-certification-cover.svg"
+  image = "covers/joule-studio-certification-cover.png"
   hidden = false
   hiddenInList = false
   hiddenInSingle = false

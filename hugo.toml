@@ -94,7 +94,7 @@ enableRobotsTXT = true
         subtitle = "SAP ABAP Developer | IS-U | S4/HANA | BTP"
 				#about = """I'm a software engineer writing about my insights and learnings from my 
 				#journey through SAP and AI."""
-        image = "profile.svg"
+        image = "profile.png"
 				view = "terminal"
         #imageAlt = "Placeholder portrait, drawn as a front elevation"
         #imageWidth = 120
@@ -175,7 +175,7 @@ enableRobotsTXT = true
 #       [languages.de.params.profile]
 #         title = "Shivam Naik"
 #         subtitle = "SAP ABAP Developer"
-#         #image = "images/profile.svg"
+#         #image = "images/profile.png"
 #         imageAlt = "Placeholder portrait, drawn as a front elevation"
 #         imageWidth = 120
 
