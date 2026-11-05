@@ -1,8 +1,8 @@
 {{- /* Renders a row of the theme's icons, each under its own name.
 
-       Usage: {{< icon-sheet names="github, gitlab, codeberg" >}} */ -}}
+       Usage: {{< icon-sheet-grid names="github, gitlab, codeberg" >}} */ -}}
 {{- $names := split (.Get "names") "," -}}
-<ul class="icon-sheet" role="list">
+<ul class="icon-sheet-grid" role="list">
 {{- range $names }}
 {{- $n := trim . " " }}
 {{- with $n }}

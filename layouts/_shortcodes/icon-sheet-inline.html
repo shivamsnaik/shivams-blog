@@ -1,0 +1,25 @@
+{{- /* Renders a row of the theme's icons, each under its own name.
+
+       Usage: {{< icon-sheet-inline name="github" margin="0 0 0 0" >}} */ -}}
+{{- $name := .Get "name" }}
+{{- $margin := .Get "margin" }}
+
+{{- /* CSS rejects unitless non-zero lengths, so bare numbers are taken as px. */ -}}
+{{- $style := "" }}
+{{- with $margin }}
+    {{- $out := slice }}
+    {{- range split . " " }}
+        {{- $t := trim . " " }}
+        {{- if and $t (ne $t "0") (findRE "^[0-9.]+$" $t) }}
+            {{- $t = printf "%spx" $t }}
+        {{- end }}
+        {{- $out = $out | append $t }}
+    {{- end }}
+    {{- $style = printf "margin: %s" (delimit $out " ") }}
+{{- end }}
+
+<p class="icon-sheet-inline icon-sheet__item"{{ with $style }} style="{{ . }}"{{ end }}>
+{{- with $name }}
+        {{ partialCached "icon.html" . . }}
+{{- end }}
+</p>
