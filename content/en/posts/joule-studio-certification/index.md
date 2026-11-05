@@ -1,5 +1,5 @@
 +++
-date = '2026-11-05T15:35:00+01:00'
+date = '2026-11-06T00:10:00+01:00'
 draft = false
 description = 'SAP has launched a new practical certification for building AI agents with Joule Studio — and one exam attempt is free until December 31, 2026. Here is what it covers and how to claim your voucher.'
 title = 'Joule Studio Developer Certification: Intent is all you need'
