@@ -1,5 +1,6 @@
 +++
-date = '2026-11-03T11:44:39+01:00'
+date = '2026-11-05T15:06:39+01:00'
+description = 'A welcome post describing what this blog is about, who it is for and what I plan to publish.'
 draft = false
 title = 'Welcome to My Blog'
 tags = ['First Post', 'Introduction']
@@ -13,21 +14,20 @@ TocOpen = true
   hiddenInList = true
 +++
 
-Hello, I'm Shivam Naik and I welcome you to my blog. This blog is for developers - all the developers - who feel the AI wave rushing past them. New models, new tools, new frameworks every week. It's never enough. I felt it too — that's why this blog exists.
+Hello, I'm Shivam Naik and I welcome you to my blog. I am a full-time Software Engineer currently working as an ABAP Developer. This blog is for all the people who feel the AI wave rushing past them. New models, new tools, new frameworks every week. It's never enough. I felt it too — that's why this blog exists.
 
 ## What you'll find here
 The things I wanted to read, in one place:
 - AI news, translated for developers who ship.
-- what actually changes how you build, debug, and deliver software. No hype.
+- What actually changes how you build, debug, and deliver software. No hype.
 - ABAP tricks you can't find with a single Google search — the stuff that currently lives in a 2014 forum thread.
-- Tools I try out, hands-on and honest - from the SAP ecosystem and beyond, including when they're not ready for production.
+- Tools I try out, hands-on and honest — from the SAP ecosystem and beyond, including when they're not ready for production.
 
 ## Why now?
 Because the pace has gone from fast to absurd:
 - Brandon Thomas used Claude Opus 5.5 to build ArtCraft, clean-room open-source clones of the entire Adobe suite in Rust — then did the same to Office with GridCraft, WordCraft, and DeckCraft.
 - Marian Zeis shipped ARC-1, a production-ready MCP server for modern SAP systems — AI assistants can now read and write ABAP, with guardrails.
 
-  
 One developer cloned Photoshop in weeks; enterprise systems are now controllable by AI agents. Whatever you build, the ground is moving under all of us.
 
 ## Come along
