@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="bvTitle bvDesc" width="512" height="512"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><title id="bvTitle">The Binary Verse</title><desc id="bvDesc">Square logo icon: two thin black diagonal elliptical orbits crossing around a hollow black nucleus, with the binary digits 0 and 1 embedded in the orbit lines as colored accents in blue, violet, teal and orange.</desc><rect x="0" y="0" width="512" height="512" rx="115" fill="#FFFFFF" stroke="#E2E7F0" stroke-width="3"></rect><g fill="none" stroke="#111827" stroke-width="7">
+    <ellipse cx="256" cy="256" rx="200" ry="85" transform="rotate(42 256 256)"></ellipse>
+    <ellipse cx="256" cy="256" rx="200" ry="85" transform="rotate(-42 256 256)"></ellipse>
+  </g><circle cx="256" cy="256" r="34" fill="none" stroke="#111827" stroke-width="7"></circle><g font-family="'Courier New', Courier, monospace" font-weight="700" font-size="42" text-anchor="middle">
+    <!-- 0 at the top orbit crossing, tangent-aligned at 26deg -->
+    <text x="256" y="165" transform="rotate(26 256 149)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">0</text>
+    <text x="256" y="165" transform="rotate(26 256 149)" fill="#2563EB">0</text>
+    <!-- 1 on the lower-right arc, tangent at 11deg -->
+    <text x="345" y="418" transform="rotate(11 345 402)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">1</text>
+    <text x="345" y="418" transform="rotate(11 345 402)" fill="#7C3AED">1</text>
+    <!-- 0 on the lower-left arc, tangent at -11deg -->
+    <text x="167" y="418" transform="rotate(-11 167 402)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">0</text>
+    <text x="167" y="418" transform="rotate(-11 167 402)" fill="#0D9488">0</text>
+    <!-- 1 on the upper-left arc, tangent at 11deg -->
+    <text x="167" y="126" transform="rotate(11 167 110)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round">1</text>
+    <text x="167" y="126" transform="rotate(11 167 110)" fill="#EA580C">1</text>
+  </g></svg>

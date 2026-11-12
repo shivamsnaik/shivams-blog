@@ -41,8 +41,8 @@ enableRobotsTXT = true
 
   [params.label]
     text = "Shivam's Blog"
-    icon = "/images/logo.png"
-    iconHeight = 32
+    icon = "images/logo.svg"
+    iconHeight = "36"
 
   [params.assets]
     favicon = "/favicon.ico"
