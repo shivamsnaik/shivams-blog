@@ -39,6 +39,19 @@ enableRobotsTXT = true
   ShowShareButtons = true
   ShowToc = true
 
+  [params.label]
+    text = "Shivam's Blog"
+    icon = "/images/logo.png"
+    iconHeight = 32
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    favicon_svg = "/favicon.svg"
+    apple_touch_icon = "/apple-touch-icon.png"
+    manifest = "/site.webmanifest"
+
 	[params.schema]
     publisherType = "Person"
 
