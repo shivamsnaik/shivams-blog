@@ -18,6 +18,13 @@ enableRobotsTXT = true
 [taxonomies]
   tag = "tags"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+        
 [params]
   env = "production"
   author = "Shivam Naik"
