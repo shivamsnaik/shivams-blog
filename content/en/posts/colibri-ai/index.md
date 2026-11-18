@@ -11,7 +11,7 @@ TocOpen             = true
 
 [ai]
   level        = 'assisted' #assisted or generated
-  note         = 'Optimized the Post, and its formatting'
+  note         = 'Post reviewing and criticising'
   model        = 'GLM 5.3 via Mistral AI'
   hiddenInList = true
 +++
@@ -54,7 +54,7 @@ In order to find out the Instagram reel's "744B on a Laptop with 8GB RAM without
 
 {{< collapse summary="Every model against this machine, and why one does not fit">}}
 ```go
-$ shivamsnaik@pop-os:~/Documents/Projects/colibri$ ./start-here.sh --list
+$ user@pop-os:~/Documents/Projects/colibri$ ./start-here.sh --list
 colibri setup
 
  * qwen36-35b                    23 GB  tight      runs with a small expert cache (needs 10 GB, runs best with 20 GB)
