@@ -1,5 +1,24 @@
 .inline-images {
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inline-images .inline-image-container {
+    flex: 1;
+    justify-content: center;
+    margin: 5px;
+}
+
+.inline-images .inline-image {
+    border-radius: 18px;
+    margin: 5px 10px 5px 0;
+}
+
+.inline-images .image-caption {
+    color: gray;
+    font-family: inherit;
+    font-size: var(--step--2);
 }
