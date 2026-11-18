@@ -11,7 +11,7 @@ TocOpen             = true
 
 [ai]
   level        = 'assisted' #assisted or generated
-  note         = 'Post reviewing and criticising'
+  note         = 'Post reviewing and improvisation'
   model        = 'GLM 5.3 via Mistral AI'
   hiddenInList = true
 +++
