@@ -1,0 +1,44 @@
+{{- /* Renders a set of images in inline format, with own style and own captions
+
+Usage: {{< images imagenames="one.jpg, two.jpg" style="margin: 10px" captions="caption1; caption2">}} */ -}}
+    {{- $imagenames := split (.Get "imagenames") "," -}}
+    {{- $attributesList := split (.Get "style") ";" -}}
+    {{- $captions := split (.Get "captions") ";" -}}
+
+    <!-- Variable Initialization -->
+    {{ $attributeKey := "" }}
+    {{ $attributeValue := "" }}
+    {{ $maxWidth := "" }}
+
+    <!-- Generate an empty style variable  -->
+    {{- $imgStyles := slice -}}
+    {{- $imgContainerStyles := slice -}}
+
+    {{- range $index, $attrValue := $attributesList -}}
+    <!-- The CSS key and value is seperated here  -->
+    {{- $attributes := split $attrValue ":" -}}
+    {{- $attributeKey = strings.TrimSpace (index $attributes 0) }}
+    {{- $attributeValue = strings.TrimSpace (index $attributes 1) }}
+
+    <!-- Store the max-width value for the caption width restriction later -->
+    {{- if eq $attributeKey "max-width" -}}
+    {{- $maxWidth = $attributeValue -}}
+    {{- $imgContainerStyles = $imgContainerStyles | append (printf "%s: %s;" ($attributeKey) ($attributeValue)) -}}
+    {{ else }}
+    <!-- (index $attributes 0) gives the key and (index $attributes 1) gives the value -->
+    {{- $imgStyles = $imgStyles | append (printf "%s: %s;" ($attributeKey) ($attributeValue)) -}}
+    {{- end -}}
+    {{ end }}
+
+    <div class="inline-images">
+        {{- range $index, $value := $imagenames -}}
+        <figure class="inline-image-container" style="{{ delimit $imgContainerStyles " " | safeCSS }}">
+            <img src="{{ strings.TrimSpace ($value) }}" alt="{{ index $captions $index }}" class='inline-image'
+                style="{{ delimit $imgStyles " " | safeCSS }}" />
+            <figcaption class="image-caption" style="max-width: {{ $maxWidth }}">
+                {{ index $captions $index }}
+
+            </figcaption>
+        </figure>
+        {{- end -}}
+    </div>
